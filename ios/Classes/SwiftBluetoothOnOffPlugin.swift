@@ -17,6 +17,8 @@ public class SwiftBluetoothOnOffPlugin: NSObject, FlutterPlugin {
     }
     
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
+        print("[Bluetooth OnOff] method \(call.method)")
+        
         switch call.method {
         case "turnOnBluetooth":
             _ = manager.state
